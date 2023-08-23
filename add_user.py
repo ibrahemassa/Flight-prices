@@ -16,6 +16,6 @@ def post_new_row(first_name, last_name, email):
         }
     }
 
-    response = requests.post(url="https://api.sheety.co/a2ccf90bd6fe726e5b3e13a9cd5d9f3b/flightDeals/users", headers=headers, json=body)
+    response = requests.post(url="SHEETY ENDPOINT", headers=headers, json=body)
     response.raise_for_status()
     print(response.text)

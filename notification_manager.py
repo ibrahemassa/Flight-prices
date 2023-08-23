@@ -2,7 +2,7 @@ import smtplib
 import requests
 
 header = {
-    "Authorization": "Bearer asdgyuias667t68"
+    "Authorization": "SHEETY KEY"
 }
 
 class NotificationManager:
@@ -15,8 +15,8 @@ class NotificationManager:
 
 
     def send_message(self, email: str):
-        my_email = "ibrahem.fares204@gmail.com"
-        password = "loglbbcevoqsmhqo"
+        my_email = "YOUR EMAIL"
+        password = "YOUR PASSWORD"
 
         with smtplib.SMTP(host = "smtp.gmail.com", port=587) as connection:
             connection.starttls()
@@ -29,7 +29,7 @@ class NotificationManager:
             connection.close()
 
     def get_users(self):
-        self.response = requests.get("https://api.sheety.co/a2ccf90bd6fe726e5b3e13a9cd5d9f3b/flightDeals/users", headers= header)
+        self.response = requests.get("SHEETY ENDPOINT", headers= header)
         self.response.raise_for_status()
         self.data = self.response.json()
         return self.data["users"]

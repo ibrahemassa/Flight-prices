@@ -3,7 +3,7 @@ import datetime as dt
 from dateutil.relativedelta import relativedelta
 
 header = {
-    "apikey": "KFU9-cIb8qXa3O1vp_ENCbxQloW4iE5l"
+    "apikey": "tequila API KEY"
 }
 
 today = dt.datetime.now().date()

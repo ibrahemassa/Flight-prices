@@ -34,7 +34,6 @@ for city in lowest_cites_prices:
         date = city["date"]
 
 noti = NotificationManager(lowest_city, min_price, date)
-# noti.send_message("oioi.ll58@outlook.com")
 emails = [user["email"] for user in noti.users]
 for email in emails:
     noti.send_message(email)
